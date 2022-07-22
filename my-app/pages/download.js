@@ -31,7 +31,7 @@ export default function Home() {
         
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/bihom_pr.png.jpg" alt="bihom logo" width={132} height={80} />
+            <Image src="/bihom_pr.png.jpg" alt="bihom logo" width={172} height={74} />
           </span>
       </footer>
     </div>

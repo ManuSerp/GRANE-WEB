@@ -19,12 +19,12 @@ export default function Home() {
   
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="/app/home" className={styles.card}>
             <h2>Online App &rarr;</h2>
             <p>Here you can access the online app, which will be the first to be developped</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="/download" className={styles.card}>
             <h2>Desktop software &rarr;</h2>
             <p>Here you will be able to download our desktop app</p>
           </a>
