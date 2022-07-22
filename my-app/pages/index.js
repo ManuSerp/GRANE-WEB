@@ -35,7 +35,7 @@ export default function Home() {
         
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/bihom_pr.png" alt="Sermatek Logo" width={202} height={74} />
+            <Image src="/bihom_pr.png.jpg" alt="BIHOM Logo" width={202} height={74} />
           </span>
       </footer>
     </div>
