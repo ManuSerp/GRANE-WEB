@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+@import url("footer.css");
+@import url("layout.css");
+@import url("navbar.css");

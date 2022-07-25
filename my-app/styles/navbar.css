@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    background-color: #42a1ee;
+  }
+  
+  nav a {
+    color: var(--green);
+    margin: 5px;
+    text-decoration: none;
+  }
+  
+  .nav-logo {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+
+  .but-Login:hover {
+    background-color: rgba(82, 82, 86, 255);
+  }
+  
+  .nav-title {
+    text-decoration: none;
+    border: 2px solid #2f3a50;
+    border-radius: 15px;
+    padding: 5px;
+
+
+  }
+
+  .nav-about {
+    text-decoration: none;
+    border: 2px solid #2f3a50;
+    border-radius: 15px;
+    padding: 5px;
+
+  }
+
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+  }
+  

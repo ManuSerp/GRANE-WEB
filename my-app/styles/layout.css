@@ -1,0 +1,23 @@
+div .content {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  div .layout-wrapper {
+    background-color: #ffffff;
+    color: #2f3a50;
+    
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+  }
+  
+  div .layout-row-1 {
+    height: 15%;
+    order: 1;
+  }
+  
+  div .layout-row-2 {
+    order: 2;
+    height: 80%;
+  }
