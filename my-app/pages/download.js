@@ -19,11 +19,15 @@ export default function Home() {
   
 
         <div className={styles.grid}>
+          <a className={styles.card}>
             <h2>Desktop app &rarr;</h2>
             <p>Desktop app link</p>
+            </a>
+            <a className={styles.card}>
 
             <h2>Mobile app &rarr;</h2>
             <p>Here you will be able to dgo to the playstore</p>
+          </a>
         </div>
       </main>
 
