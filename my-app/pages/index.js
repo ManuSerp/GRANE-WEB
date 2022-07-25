@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,15 +19,18 @@ export default function Home() {
   
 
         <div className={styles.grid}>
-          <a href="/app/home" className={styles.card}>
+          <Link href="/app/home">
+          <a className={styles.card}>
             <h2>Online App &rarr;</h2>
             <p>Here you can access the online app, which will be the first to be developped</p>
           </a>
-
-          <a href="/download" className={styles.card}>
+          </Link>
+            <Link href="/download">
+          <a className={styles.card}>
             <h2>Desktop software &rarr;</h2>
             <p>Here you will be able to download our desktop app</p>
           </a>
+          </Link>
         </div>
       </main>
 
