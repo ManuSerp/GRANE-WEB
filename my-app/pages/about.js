@@ -15,7 +15,7 @@ export default function About() {
         <p>
           This app aim to make local shopping easier by providing a search in engine in local shops stocks.
 
-          Indeed, it is a very common issue, thaht you want to but something in your city, but you don't now where to go or if a shops have your item.
+          Indeed, it is a very common issue, thaht you want to but something in your city, but you dont now where to go or if a shops have your item.
 
           This app aim to solve this.
 
