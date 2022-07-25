@@ -7,7 +7,7 @@ function Navbar() {
       <div className="nav-left">
         <Link href="/">
           <a className="nav-logo">
-          <Image src="/img/bihom_trp.png" width={206} height={89} />
+          <Image src="/img/bihom_trp.png" width={172} height={74} />
           </a>
         </Link>
         <Link href="/">
