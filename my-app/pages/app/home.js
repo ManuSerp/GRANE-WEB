@@ -1,32 +1,31 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../../styles/Home.module.css'
-
+import ItemCard from '../../components/item/itemcard'
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <title>GRANE</title>
-        <meta name="description" content="Grane app" />
+        <meta name="description" content="Grane online app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          ONLINE APP
-        </h1>
+      <div className='ItemList'>
+      
+        <ItemCard name="test" desc="test desc" im_uri="/img/sermatek.png"/>
+        <ItemCard name="test" desc="test desc" im_uri="/img/sermatek.png"/>
+        <ItemCard name="test" desc="test desc" im_uri="/img/sermatek.png"/>
+
+
+
+    
+      
+      </div>        
 
   
 
-      </main>
 
-      <footer className={styles.footer}>
-        
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/bihom_pr.png.jpg" alt="bihom logo" width={172} height={74} />
-          </span>
-      </footer>
+   
     </div>
   )
 }
