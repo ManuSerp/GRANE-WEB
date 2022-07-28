@@ -14,7 +14,7 @@ const fetcherItem = async (url) => {
 
 export default function ItemList() {
 
-    const { data, error } = useSWR("/api/db/itemlist", fetcherItem, {
+    const { data, error } = useSWR("https://grane-back.vercel.app/api/db/itemlist", fetcherItem, {
         refreshInterval: 30000,
       });
       if (error) {
