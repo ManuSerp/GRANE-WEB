@@ -14,7 +14,7 @@ const fetcherItem = async (url) => {
 
 export default function ItemList() {
 
-    const { data, error } = useSWR("/api/db/itemlist", fetcherCoin, {
+    const { data, error } = useSWR("/api/db/itemlist", fetcherItem, {
         refreshInterval: 30000,
       });
       if (error) {
