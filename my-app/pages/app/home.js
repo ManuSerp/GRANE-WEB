@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ItemCard from '../../components/item/itemcard'
+import ItemList from '../../components/item/itemlist'
 export default function Home() {
   return (
     <div >
@@ -12,11 +12,7 @@ export default function Home() {
 
       <div className='ItemList'>
       
-        <ItemCard name="test" desc="test desc" im_uri="/img/sermatek.png"/>
-        <ItemCard name="test" desc="test desc" im_uri="/img/sermatek.png"/>
-        <ItemCard name="test" desc="test desc" im_uri="/img/sermatek.png"/>
-
-
+        <ItemList></ItemList>
 
     
       
