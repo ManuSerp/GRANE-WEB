@@ -31,7 +31,7 @@ export default function ItemList() {
            
             <p>LeaderBoard :</p>
             {data.map(({ name, desc, im_link }, i) => (
-              <UserLeaderBoard key={i} name={name} desc={desc} im_uri={im_link} />
+              <ItemCard key={i} name={name} desc={desc} im_uri={im_link} />
             ))}
           </div>
       );
