@@ -18,6 +18,9 @@ export default function ItemList() {
         refreshInterval: 30000,
       });
       if (error) {
+       
+      console.error(error, error.stack);
+      
         return <div>failed to load </div>;
       }
     
