@@ -30,7 +30,7 @@ export default function ItemList() {
 
 
       return (
-          <div className="ItemList">
+          <div className="component-ItemList">
            
             <p>LeaderBoard :</p>
             {data.map(({ name, desc, im_link }, i) => (
