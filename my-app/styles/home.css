@@ -1,4 +1,9 @@
 .ItemList {
     margin-top: 20px;
     margin-left: 20%; 
+    border: 2px solid #3f4552;
+    border-radius: 15px;
+    padding: 5px;
+    max-height: 80vh;
+    overflow: auto;
 }
