@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 async function searchVisual(search) {
   const response = await fetch("https://grane-back.vercel.app/api/search", {
     method: "POST",
-    body: JSON.stringify({ test: "Bonjour ceci est un test" }),
+    body: JSON.stringify({ test: search }),
     headers: {
       "Content-Type": "application/json",
     },
