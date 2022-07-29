@@ -32,7 +32,7 @@ export default function ItemList() {
       return (
           <div className="ItemList">
            
-            <p>LeaderBoard :</p>
+            <p>Item List :</p>
             {data.map(({ name, desc, im_link }, i) => (
               <ItemCard key={i} name={name} desc={desc} im_uri={im_link} />
             ))}
