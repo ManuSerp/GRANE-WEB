@@ -30,9 +30,9 @@ export default function ItemList() {
 
 
       return (
-          <div className="ItemList">
+          <div className="component-ItemList">
            
-            <p>Item List :</p>
+
             {data.map(({ name, desc, im_link }, i) => (
               <ItemCard key={i} name={name} desc={desc} im_uri={im_link} />
             ))}
