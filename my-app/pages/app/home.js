@@ -11,8 +11,7 @@ export default function Home() {
       </Head>
 
       <div className='ItemList'>
-        <div className='home-div-p'>        itemList :
-</div>
+        
         <ItemList></ItemList>
 
     
