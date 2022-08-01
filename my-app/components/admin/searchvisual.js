@@ -1,7 +1,7 @@
 
 
 import useSWR from "swr";
-
+import ItemCard from "../item/itemcard";
 
 async function searchVisual(search) {
   const response = await fetch("https://grane-back.vercel.app/api/search", {
@@ -44,7 +44,7 @@ function SearchSeeker({search}) {
   return (
     <div>
       <h1>Search: {search} </h1>
-        
+        <div><ItemCard name={data.rep[0].name} desc={data.rep[0].desc} im_uri={data.rep[0].im_link}></ItemCard></div>
       <div>{JSON.stringify(data.rep[0])}</div>
       </div>
   );
