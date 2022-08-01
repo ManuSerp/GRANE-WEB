@@ -40,13 +40,12 @@ function SearchSeeker({search}) {
     return <div>loading...</div>;
   }
     
-  console.log(data);
  
   return (
     <div>
       <h1>SearchSeeker: {search} </h1>
         
-      <div>{data[0]}</div>
+      <div>{JSON.stringify(data.rep[0])}</div>
       </div>
   );
 }
