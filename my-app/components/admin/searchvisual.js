@@ -1,4 +1,7 @@
-import { useState, useRef } from "react";
+
+
+import useSWR from "swr";
+
 
 async function searchVisual(search) {
   const response = await fetch("https://grane-back.vercel.app/api/search", {
@@ -18,41 +21,32 @@ async function searchVisual(search) {
   return data;
 }
 
-function SearchSeeker() {
-  const [resEnd, setRes] = useState();
-  const searchInputRef = useRef();
 
-  async function submitHandler(event) {
-    event.preventDefault();
 
-    const enteredSearch = searchInputRef.current.value;
+function SearchSeeker({search}) {
 
-    // optional: Add validation
 
-    try {
-      const result_q = await searchVisual(enteredSearch);
-      setRes(JSON.stringify(result_q));
-      //alert(result_q.coins.eur);
-    } catch (error) {
-      console.log(error);
-      setRes("ERROR");
-    }
+  const { data, error } = useSWR({search}, searchVisual, {
+    refreshInterval: 30000,
+  });
+  if (error) {
+   
+  console.error(error, error.stack);
+  
+    return <div>failed to load </div>;
   }
 
+  if (!data) {
+    return <div>loading...</div>;
+  }
+    
+ 
   return (
-    <section>
-      <h1>SearchSeeker</h1>
-      <form onSubmit={submitHandler}>
-        <div>
-          <label htmlFor="search">search</label>
-          <input type="search" id="search" required ref={searchInputRef} />
-        </div>
-        <div>
-          <button>search</button>
-        </div>
-      </form>
-      <div>{resEnd}</div>
-    </section>
+    <div>
+      <h1>SearchSeeker: {search} </h1>
+        
+      <div>{data}</div>
+      </div>
   );
 }
 

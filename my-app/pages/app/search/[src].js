@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import SearchSeeker from '../../../components/admin/searchvisual'
 
 export default function Home() {
+  const router = useRouter();
+  const { src } = router.query;
+  console.log(src);
   return (
     <div className='main-home'>
       <Head>
@@ -12,9 +16,8 @@ export default function Home() {
       </Head>
 
       <div >
-        
-        <SearchSeeker></SearchSeeker>
-
+        <p> test : {src} </p>
+        <SearchSeeker search={src}></SearchSeeker>
     
       
       </div>        
