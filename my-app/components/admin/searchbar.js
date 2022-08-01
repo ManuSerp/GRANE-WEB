@@ -1,6 +1,7 @@
 import { useRef } from "react";
+import Link from "next/link";
 
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import Router from 'next/router'
 
 
 export default function Searchbar(){
@@ -11,12 +12,7 @@ export default function Searchbar(){
       event.preventDefault();
   
       const enteredSearch = searchInputRef.current.value;
-      return {
-        redirect: {
-          destination: "http://localhost:3000/app/search/"+{enteredSearch},
-          permanent: false,
-        },
-      };
+      Router.push("/app/search/"+enteredSearch)
         
     }
   
