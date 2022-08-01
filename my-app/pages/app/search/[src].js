@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import SearchSeeker from '../../components/admin/searchvisual'
+import SearchSeeker from '../../../components/admin/searchvisual'
 
 export default function Home() {
   return (

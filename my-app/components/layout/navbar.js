@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Searchbar from "../admin/searchbar";
 function Navbar() {
   return (
     <nav>
@@ -13,6 +13,7 @@ function Navbar() {
         <Link href="/">
           <a className="nav-title">GRANE </a>
         </Link>
+        <Searchbar></Searchbar>
       </div>
       <div className="nav-right">
         <Link href="/about">
