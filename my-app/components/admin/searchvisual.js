@@ -43,7 +43,7 @@ function SearchSeeker({search}) {
  
   return (
     <div>
-      <h1>SearchSeeker: {search} </h1>
+      <h1>Search: {search} </h1>
         
       <div>{JSON.stringify(data.rep[0])}</div>
       </div>

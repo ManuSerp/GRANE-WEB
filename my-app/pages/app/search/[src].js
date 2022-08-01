@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
 
       <div >
-        <p> test : {src} </p>
         <SearchSeeker search={src}></SearchSeeker>
     
       
