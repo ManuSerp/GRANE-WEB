@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ItemList from '../../components/item/itemlist'
+import { useRouter } from 'next/router'
+import SearchSeeker from '../../../components/admin/searchvisual'
+
 export default function Home() {
+  const router = useRouter();
+  const { src } = router.query;
+  console.log(src);
   return (
     <div className='main-home'>
       <Head>
@@ -10,10 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className='ItemList'>
-        
-        <ItemList></ItemList>
-
+      <div >
+        <SearchSeeker search={src}></SearchSeeker>
     
       
       </div>        

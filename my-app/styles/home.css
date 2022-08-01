@@ -9,6 +9,8 @@
 
 
     background-color: rgb(92, 175, 231);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
 }
 .main-home {
     width: 100%;
