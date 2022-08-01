@@ -26,7 +26,7 @@ async function searchVisual(search) {
 function SearchSeeker({search}) {
 
 
-  const { data, error } = useSWR({search}, searchVisual, {
+  const { data, error } = useSWR(search, searchVisual, {
     refreshInterval: 30000,
   });
   if (error) {
@@ -40,12 +40,13 @@ function SearchSeeker({search}) {
     return <div>loading...</div>;
   }
     
+  console.log(data);
  
   return (
     <div>
       <h1>SearchSeeker: {search} </h1>
         
-      <div>{data}</div>
+      <div>{data[0]}</div>
       </div>
   );
 }
